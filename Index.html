@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuturaFestt</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script>
+      const classSelector = document.getElementById('classSelector');
+      const productImage = document.getElementById('productImage');
+    
+      
+  
+  
+      classSelector.addEventListener('change', function() {
+        const selectedClass = this.value;
+        productImage.src = imageMap[selectedClass];
+      });
+
+
+      
+    </script>
+</head>
+<body >
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 text-white">
+    <div class="container mx-auto flex flex-col bg-black/20 md:flex-row items-center justify-between px-6 py-3">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-2 mb-2 md:mb-0">
+        <span class="text-lg font-semibold tracking-widest">FUTURAFESTT</span>
+      </div>
+
+      <!-- Menu -->
+     <div class="flex-1 flex justify-center">
+       <ul class="flex space-x-7 text-sm font-semibold uppercase">
+         <li><a href="#home" class="text-yellow-400">Home</a></li>
+         <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+         <li><a href="#artis" class="hover:text-yellow-400">Lineup Artis</a></li>
+         <li><a href="#jadwal" class="hover:text-yellow-400">Schedule</a></li>
+         <li><a href="#tiket" class="hover:text-yellow-400">Tickets</a></li>
+       </ul>
+     </div>
+    </div>
+  </nav>
+
+  
+  <!--Header-->
+  <header class="relative h-screen bg-cover bg-center" style="background-image: url('bg1.jpg');" id="home">
+   <!-- Text container di tengah kiri -->
+    <div class="absolute top-1/2 left-0 pl-20 transform -translate-y-1/2 text-left">
+      <h1 class="text-4xl md:text-4xl font-bold text-white">One Night, A Thousand Memories.</h1>
+      <h1 class="text-4xl md:text-4xl font-bold text-white">Let's Rock the Night!</h1>
+      <p class="text-sm md:text-base text-white mt-2">Monday, 1 January 2019</p>
+    </div>
+  </header>
+
+
+   <!--Artis-->
+  <section class="text-gray-600 body-font" id="about">
+    <div class="container mx-auto flex px-10 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded " alt="hero" src="bg2.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">One Stage. Thousands of Stories
+        </h1>
+        <p class="mb-8 leading-relaxed">
+          In a fast-paced world, music is the universal language that unites souls.
+          FuturaFestt is more than just an event - it's a celebration of freedom, passion, and boundless energy. Here, every thump of the bass, every cheer of the crowd, and every wave of the hands in the air will form an unforgettable story.An Experience Not Just Watching, But Feeling.
+
+          Every second of FuturaFestt is designed to rock our world. From talented local artists to spectacular performances from big stars, we've got a lineup ready to ignite your passion.
+          Accompanied by a grand stage setting, stunning lighting, and an adrenaline-filled atmosphere, this night is not just about music it's about experiencing life to the fullest.
+          
+          Join us and be a part of history.
+          
+          FuturaFestt is an invitation to step out of the routine, let go of all boundaries, and let the rhythm flow within us.
+          Together with thousands of other souls who share the same passion, let's light up the night and create a memory that will keep on thumping in our hearts forever.</p>
+
+      </div>
+    </div>
+  </section>
+  
+  <section  style="background-image: url('bg3.jpg');" id="artis">
+    <div class="container px-5 py-100 ">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-4xl mt-10 font-medium title-font mb-4 text-white/100 tracking-widest">Lineup Artis FuturaFertt</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-white/100 text-base">Get ready for an unforgettable musical experience! FuturaFertt features a lineup of world-renowned artists - from melodious voices to pounding beats. Feel the incredible energy of our grand stage.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 ml-10" src="assets/image/art1.webp">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-white/100 ml-10">Adele</h2>
+              <h3 class="text-white/80 mb-3 ml-10">Singer</h3>
+              <p class="text-white/80  mb-4 ml-10">International singer known for her unique voice and hits like "Hello" and "Someone Like You.".</p>
+              <span class="inline-flex">
+                <a class=" ml-10 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 ml-10" src="assets/image/art2.webp">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg ml-10 text-white/100">Billie Eilish</h2>
+              <h3 class="text-white/80 mb-3 ml-10">Singer</h3>
+              <p class=" text-white/80 mb-4 ml-10">American singer and songwriter known for her unique and expressive musical style, with hits such as “Bad Guy” and “Happier Than Ever”.</p>
+              <span class="inline-flex">
+                <a class="ml-10 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 ml-10" src="assets/image/art3.jpg">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg  ml-10 text-white/100">Bruno Mars</h2>
+              <h3 class="text-white/80 mb-3 ml-10">Singer</h3>
+              <p class=" text-white/80 mb-4 ml-10">Bruno Mars is a singer, songwriter, and producer known for his unique style of funk, pop, and soul music. His charismatic act and hits like “Just the Way You Are” and “Uptown Funk”</p>
+              <span class="inline-flex">
+                <a class="ml-10 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 ml-10" src="assets/image/art4.webp">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg ml-10 text-white/100">Conan Gray</h2>
+              <h3 class="text-white/80 mb-3 ml-10">Singer</h3>
+              <p class="text-white/80 mb-4 ml-10">Conan Gray is known for his emotional indie pop style and heartfelt lyrics, songs like"Heather" and "Maniac".</p>
+              <span class="inline-flex">
+                <a class=" ml-10 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section >
+  
+
+  <section class="text-gray-600 body-font overflow-hidden" id="jadwal">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="-my-8 divide-y-2 divide-gray-100">
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700 mt-5 ml-10">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm ml-10">12 January 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Billie Eilish and Adele</h2>
+            <a class="text-gray-500 inline-flex items-center mt-4">
+                   Billie Eilish is known for her dark and experimental style, while Adele wowed the world with her emotional vocals. Both represent two different but equally influential generations of music.
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700 mt-5 ml-10">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm ml-10">17 January 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bruno Mars and Conan Gray</h2>
+            <a class="text-gray-500 inline-flex items-center mt-4">
+                   Bruno Mars is known for his energetic stage performances and funk-pop music, while Conan Gray steals the show with his poetic lyrics and soulful voice in the world of indie pop.
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<section class="text-gray-600 body-font overflow-hidden" id="tiket">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+      <img alt="ticket" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="assets/image/aaa.jpg">
+      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+        <h2 class="text-sm title-font text-gray-500 tracking-widest">FUTURAFERTT</h2>
+        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">General Admission Ticket</h1>
+        <p class="leading-relaxed mt-4">
+          Enjoy full-day access to all FuturaFertt events, stages, and artist performances. Includes one drink coupon.
+        </p>
+
+        <div class="flex items-center mt-6 mb-4">
+          <span class="mr-4 text-lg font-medium">Quantity:</span>
+          <button onclick="decreaseQty()" class="bg-gray-300 text-black px-3 py-1 rounded-l hover:bg-gray-400">-</button>
+          <input id="qty" type="number" value="1" min="1" class="w-12 text-center border-t border-b border-gray-300" readonly>
+          <button onclick="increaseQty()" class="bg-gray-300 text-black px-3 py-1 rounded-r hover:bg-gray-400">+</button>
+        </div>
+
+        <div class="flex items-center justify-between mb-6">
+          <span class="title-font font-medium text-2xl text-gray-900">Total: $<span id="totalPrice">58.00</span></span>
+        </div>
+
+        <div class="flex items-center">
+          <button onclick="addToCart()" class="flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+           Buy
+          </button>
+          <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4 hover:bg-red-300">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Notification -->
+        <p id="notif" class="mt-4 text-green-600 hidden">Congratulations your ticket purchase has been successful!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap md:text-left text-center order-first">
+
+      <!-- General Information -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">INFORMATION</h2>
+        <nav class="list-none mb-10">
+          <li><a class="text-gray-600 hover:text-gray-800">About FuturaFertt</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Artist Lineup</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Schedule</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Contact Us</a></li>
+        </nav>
+      </div>
+
+      <!-- Tickets -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">TICKETS</h2>
+        <nav class="list-none mb-10">
+          <li><a class="text-gray-600 hover:text-gray-800">Buy Tickets</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Ticket Types</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Refund Policy</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Promos & Discounts</a></li>
+        </nav>
+      </div>
+
+      <!-- Location -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LOCATION</h2>
+        <nav class="list-none mb-10">
+          <li><a class="text-gray-600 hover:text-gray-800">Venue Map</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Transportation</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Accommodation</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800">Accessibility</a></li>
+        </nav>
+      </div>
+
+      <!-- Latest Announcements -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LATEST ANNOUNCEMENTS</h2>
+        <ul class="list-none text-sm text-gray-600 mb-4">
+          <li>✔ Early Bird tickets are almost sold out!</li>
+          <li>✔ Performance schedule now available.</li>
+          <li>✔ Local food booths have been added.</li>
+          <li>✔ VIP parking is now available.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  let pricePerTicket = 58.00;
+
+  function increaseQty() {
+    let qtyInput = document.getElementById('qty');
+    let current = parseInt(qtyInput.value);
+    qtyInput.value = current + 1;
+    updateTotal();
+  }
+
+  function decreaseQty() {
+    let qtyInput = document.getElementById('qty');
+    let current = parseInt(qtyInput.value);
+    if (current > 1) {
+      qtyInput.value = current - 1;
+      updateTotal();
+    }
+  }
+
+  function updateTotal() {
+    let qty = parseInt(document.getElementById('qty').value);
+    let total = (qty * pricePerTicket).toFixed(2);
+    document.getElementById('totalPrice').textContent = total;
+  }
+
+  function addToCart() {
+    const notif = document.getElementById('notif');
+    notif.classList.remove('hidden');
+    setTimeout(() => {
+      notif.classList.add('hidden');
+    }, 2000);
+  }
+</script>
+
+</body>
+</html>
+  
